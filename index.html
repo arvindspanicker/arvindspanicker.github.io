@@ -1,162 +1,265 @@
-
+<!DOCTYPE html>
 <html>
-<head>
-  <meta name="description" content="QR Code scanner" />
-  <meta name="keywords" content="qrcode,qr code,scanner,barcode,javascript" />
-  <meta name="language" content="English" />
-  <meta name="copyright" content="Lazar Laszlo (c) 2011" />
-  <meta name="Revisit-After" content="1 Days"/>
-  <meta name="robots" content="index, follow"/>
-  <meta http-equiv="Content-type" content="text/html;charset=UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-<title>Web QR</title>
-
-<style type="text/css">
-body{
-    width:100%;
-    text-align:center;
-}
-img{
-    border:0;
-}
-#main{
-    margin: 15px auto;
-    background:white;
-    overflow: auto;
-	width: 100%;
-}
-#header{
-    background:white;
-    margin-bottom:15px;
-}
-#mainbody{
-    background: white;
-    width:100%;
-	display:none;
-}
-#footer{
-    background:white;
-}
-#v{
-    width:320px;
-    height:240px;
-}
-#qr-canvas{
-    display:none;
-}
-#qrfile{
-    width:320px;
-    height:240px;
-}
-#mp1{
-    text-align:center;
-    font-size:35px;
-}
-#imghelp{
-    position:relative;
-    left:0px;
-    top:-160px;
-    z-index:100;
-    font:18px arial,sans-serif;
-    background:#f0f0f0;
-	margin-left:35px;
-	margin-right:35px;
-	padding-top:10px;
-	padding-bottom:10px;
-	border-radius:20px;
-}
-.selector{
-    margin:0;
-    padding:0;
-    cursor:pointer;
-    margin-bottom:-5px;
-}
-#outdiv
-{
-    width:320px;
-    height:240px;
-	border: solid;
-	border-width: 3px 3px 3px 3px;
-}
-#result{
-    border: solid;
-	border-width: 1px 1px 1px 1px;
-	padding:20px;
-	width:70%;
-}
-
-ul{
-    margin-bottom:0;
-    margin-right:40px;
-}
-li{
-    display:inline;
-    padding-right: 0.5em;
-    padding-left: 0.5em;
-    font-weight: bold;
-    border-right: 1px solid #333333;
-}
-li a{
-    text-decoration: none;
-    color: black;
-}
-
-#footer a{
-	color: black;
-}
-.tsel{
-    padding:0;
-}
-
+<title>Arvind S Panicker</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta author="Arvind S Panicker">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel='stylesheet' href='https://fonts.googleapis.com/css?family=Roboto'>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<link rel="stylesheet" href="https://www.w3schools.com/lib/w3-theme-black.css">
+<style>
+html,body,h1,h2,h3,h4,h5,h6 {font-family: "Roboto", sans-serif}
+.w3-text-cyan {color:#1a237e !important}
+#name{padding-left: 90px;}
+@media only screen and (max-width: 600px){#name{padding-left:0px;} .achieve{padding-left:15px;padding-right:15px;}}
 </style>
+<body class="w3-theme-l3">
 
-<script type="text/javascript" src="llqrcode.js"></script>
-<script type="text/javascript" src="https://apis.google.com/js/plusone.js"></script>
-<script type="text/javascript" src="webqr.js"></script>
+<!-- Page Container -->
+<div class="w3-content w3-margin-top" style="max-width:1400px;">
 
-<script type="text/javascript">
+  <!-- The Grid -->
+  <div class="w3-row-padding">
+  
+    <!-- Left Column -->
+    <div class="w3-third">
+    
+      <div class="w3-theme w3-text-grey w3-card-4">
+        <div class="w3-display-container">
+          <img src="images/me.jpg" style="width:100%" alt="Arvind S Panicker">
+          <div class="w3-display-bottomleft w3-container w3-text-white">
+            <h2 id="name" >Arvind S Panicker</h2>
+          </div>
+        </div>
+        <div class="w3-container">
+          <p><i class="fa fa-code fa-fw w3-margin-right w3-large w3-text-blue"></i>Programmer /  Developer</p>
+          <p><i class="fa fa-home fa-fw w3-margin-right w3-large w3-text-blue"></i>Trivandrum, Kerala, India </p>
+          <p><i class="fa fa-envelope fa-fw w3-margin-right w3-large w3-text-blue"></i>arvindspanicker@gmail.com</p>
+          <p><i class="fa fa-phone fa-fw w3-margin-right w3-large w3-text-blue"></i>9605592887, 7012826016</p>
+          <hr>
 
-  var _gaq = _gaq || [];
-  _gaq.push(['_setAccount', 'UA-24451557-1']);
-  _gaq.push(['_trackPageview']);
+          <p class="w3-large"><b><i class="fa fa-bolt fa-2x w3-margin-right w3-text-blue"></i>Skills</b></p>
+          <p>C++</p>
+          <div class="w3-light-grey w3-round-xlarge w3-small">
+            <div class="w3-container w3-center w3-round-xlarge w3-blue" style="width:90%">90%</div>
+          </div>
+          <p>C</p>
+          <div class="w3-light-grey w3-round-xlarge w3-small">
+            <div class="w3-container w3-center w3-round-xlarge w3-blue" style="width:85%">
+              <div class="w3-center w3-text-white">85%</div>
+            </div>
+          </div>
+          <p>HTML5</p>
+          <div class="w3-light-grey w3-round-xlarge w3-small">
+            <div class="w3-container w3-center w3-round-xlarge w3-blue" style="width:75%">75%</div>
+          </div>
+          <p>CSS3</p>
+          <div class="w3-light-grey w3-round-xlarge w3-small">
+            <div class="w3-container w3-center w3-round-xlarge w3-blue" style="width:75%">75%</div>
+          </div>
+          <p>Python</p>
+          <div class="w3-light-grey w3-round-xlarge w3-small">
+            <div class="w3-container w3-center w3-round-xlarge w3-blue" style="width:40%">70%</div>
+          </div>
+          <p>MySQL</p>
+          <div class="w3-light-grey w3-round-xlarge w3-small">
+            <div class="w3-container w3-center w3-round-xlarge w3-blue" style="width:69%">70%</div>
+          </div>
+          <p>W3.CSS</p>
+          <div class="w3-light-grey w3-round-xlarge w3-small">
+            <div class="w3-container w3-center w3-round-xlarge w3-blue" style="width:45%">45%</div>
+          </div>
+          
+          <br>
+          <hr>
+          <p class="w3-large"><b><i class="fa fa-globe fa-2x w3-margin-right w3-text-blue"></i>Languages</b></p>
+          <p>English</p>
+          <div class="w3-light-grey w3-round-xlarge">
+            <div class="w3-round-xlarge w3-blue" style="height:24px;width:90%"></div>
+          </div>
+          <p>Malayalam</p>
+          <div class="w3-light-grey w3-round-xlarge">
+            <div class="w3-round-xlarge w3-blue" style="height:24px;width:90%"></div>
+          </div>
+          <br>
+          <hr>
+          <p class="w3-large"><b><i class="fa fa-user fa-2x w3-margin-right w3-text-blue"></i>Personal Skills</b></p>
+          <p>Communication</p>
+          <div class="w3-light-grey w3-round-xlarge">
+            <div class="w3-round-xlarge w3-blue" style="height:24px;width:80%"></div>
+          </div>
+          <p>Organization</p>
+          <div class="w3-light-grey w3-round-xlarge">
+            <div class="w3-round-xlarge w3-blue" style="height:24px;width:90%"></div>
+          </div>
+          <p>Team Player</p>
+          <div class="w3-light-grey w3-round-xlarge">
+            <div class="w3-round-xlarge w3-blue" style="height:24px;width:90%"></div>
+          </div>
+          <p>Creativity</p>
+          <div class="w3-light-grey w3-round-xlarge">
+            <div class="w3-round-xlarge w3-blue" style="height:24px;width:90%"></div>
+          </div>
+          <br>
+          <hr>
+          <br>
+        </div>
+      </div>
+    <!-- End Left Column -->
+    </div>
 
-  (function() {
-    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
-    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
-    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
-  })();
+    <!-- Right Column -->
+    <div class="w3-twothird">
+    
+      <div class="w3-container w3-card-2 w3-theme w3-margin-bottom">
+        <h2 class="w3-text-white w3-padding-8"><i class="fa fa-suitcase fa-fw w3-margin-right w3-xxlarge w3-text-blue"></i>Work Experience</h2>
+        <div class="w3-container">
+          <h5 class="w3-opacity"><b>Intern At Curvelogics</b></h5>
+          <h6 class="w3-text-blue"><i class="fa fa-calendar fa-fw w3-margin-right"></i>July 2017 - <span class="w3-tag w3-blue w3-round">Current</span></h6>
+          <p>Working on an autonomous rover that uses computer vision to navigate through obstacles and reach it's goal</p>
+          <hr>
+        </div>
+        <div class="w3-container">
+          <h5 class="w3-opacity "><b>Intern At IIT Guwahati</b></h5>
+          <h6 class="w3-text-blue"><i class="fa fa-calendar fa-fw w3-margin-right"></i>May 2017 - June 2017</h6>
+          <p>Worked on Pattern Mining for Performance Optimization on MultiCore Systems as a research intern under Dr.John Jose, Assistant Professor at IIT G</p>
+          <hr>
+        </div>
+      </div>
 
-</script>
+      <div class="w3-container w3-card-2 w3-theme w3-margin-bottom">
+        <h2 class="w3-text-white w3-padding-8"><i class="fa fa-book fa-fw w3-margin-right w3-xxlarge w3-text-blue"></i>Education</h2>
+        <div class="w3-container">
+          <h5 class="w3-opacity"><b>Mar Baselios College Of Engineering and Technology</b></h5>
+          <h6 class="w3-text-blue"><i class="fa fa-calendar fa-fw w3-margin-right"></i>2014 - 2018</h6>
+          <p>Bachelor Degree</p>
+        </div>
+        <hr>
+        <div class="w3-container">
+          <h5 class="w3-opacity"><b>Chinmaya Vidyalaya Attukal (CBSE)</b></h5>
+          <h6 class="w3-text-blue"><i class="fa fa-calendar fa-fw w3-margin-right"></i>2011 - 2013</h6>
+          <p>11th and 12th</p>
+        </div>
+        <hr>
+      </div>
 
-</head>
 
-<body>
-<div id="main">
-<div id="mainbody">
-<table class="tsel" border="0" width="100%">
-<tr>
-<td valign="top" align="center" width="50%">
-<table class="tsel" border="0">
-<tr>
-<td><img class="selector" id="webcamimg" src="vid.png" onclick="setwebcam()" align="left" /></td>
-<td><img class="selector" id="qrimg" src="cam.png" onclick="setimg()" align="right"/></td></tr>
-<tr><td colspan="2" align="center">
-<div id="outdiv">
-</div></td></tr>
-</table>
-</td>
-</tr>
-<tr><td colspan="3" align="center">
-<img src="down.png"/>
-</td></tr>
-<tr><td colspan="3" align="center">
-<div id="result"></div>
-</td></tr>
-</table>
-</div>&nbsp;
+      <div class="w3-container w3-card-2 w3-theme">
+        <h2 class="w3-text-white w3-padding-8"><i class="fa fa-gear fa-fw w3-margin-right w3-xxlarge w3-text-blue"></i>Project</h2>
+        <div class="w3-container">
+         <ul type="circle">
+            <li><h4 class="w3-text-grey"><strong>Electric Wheelchair Convertible</strong></h4><span class="w3-text-blue">August, 2017 - </span><span class="w3-tag w3-blue w3-round">Current</span><br>
+            <p>An Raspberry IoT project using Android OS running on it.<br>Funded By Centre For Disability Studies</p>
+            </li>
+         </ul>
+        </div>
+
+        <div class="w3-container">
+         <ul type="circle">
+            <li><h4 class="w3-text-grey"><strong>Self Driving Mini-Car</strong></h4><span class="w3-text-blue"> July, 2017 - </span><span class="w3-tag w3-blue w3-round">Current</span><br>
+            <p>Implementing a Computer Vision Based Autonomous Rover that avoids obstacles and finds it's destination. Being Developed using TensorFlow Object Detection API<br>As part of Internship at Curvelogics</p>
+            </li>
+         </ul>
+        </div>
+
+        <div class="w3-container">
+         <ul type="circle">
+            <li><h4 class="w3-text-grey"><strong>Computer Society Of India MBCET Student Chapter Website</strong></h4><span class="w3-text-blue">July, 2017</span><br>
+            <p>Developed and Designed Webpage for CSI Student Chapter of MBCET. Used HTML5, CSS3, W3.CSS , JavaScript, jQuery<br><a href="http://www.csimbcet.in" style="text-decoration: none" class=" w3-hover-text-red w3-text-blue" >www.csimbcet.in</a></p>
+            </li>
+         </ul>
+        </div>
+
+        <div class="w3-container">
+         <ul type="circle">
+            <li><h4 class="w3-text-grey"><strong>LogIn Validation Webpage</strong></h4><span class="w3-text-blue">November, 2016</span><br>
+            <p>Hotel Booking Webpage using Node.Js for login validation and HTML,CSS for styling and layout of website and MongoDb as the database for storage<br>As part of project workshop conducted by Infosys</p>
+            </li>
+         </ul>
+        </div>
+
+        <div class="w3-container">
+         <ul type="circle">
+            <li><h4 class="w3-text-grey"><strong>College Management System</strong></h4><span class="w3-text-blue">July, 2016 - November,2016</span><br>
+            <p>Front End Using Java and Backend Using MySQL database<br>As part of Semester 5 Mini-Project</p>
+            </li>
+         </ul>
+        </div>
+
+         <div class="w3-container">
+         <ul type="circle">
+            <li><h4 class="w3-text-grey"><strong>Hotel Management System</strong></h4><span class="w3-text-blue">February, 2016 - June,2016</span><br>
+            <p>Using C++ and Object Oriented Design Methods<br>As part of Semester 4 Mini-Project</p>
+            </li>
+         </ul>
+        </div>
+        
+      </div>
+    <!-- End Right Column -->
+    </div>
+    
+  <!-- End Grid -->
+  </div>
+  
+  <!-- End Page Container -->
 </div>
-<canvas id="qr-canvas" width="800" height="600"></canvas>
-<script type="text/javascript">load();</script>
-</body>
+<br>
+ <div class="achieve">
+  <div class=" w3-theme w3-card-2 w3-container w3-content" style="max-width:1380px;">
+    <h2 class="w3-text-white w3-padding-8"><i class="fa fa-trophy fa-fw w3-margin-right w3-xxlarge w3-text-blue"></i>Achievements</h2>
 
+         <div class="w3-container">
+         <ul type="disc">
+            <li><p>Third Runner-Up in All India Travel Hackathon Conducted by IBS <span class="w3-text-blue ">(2018)</span></p></li>
+            <li><p>Chairman of Computer Society Of India MBCET Student Chapter <span class="w3-text-blue ">(2017 - 2018)</span></p></li>
+            <li><p>Sub Editor of Mar Baselios College of Engineering and Technology College Magazine <span class="w3-text-blue">(2017)</span></p></li>
+            <li><p>Semi – Finalist in All India Coding Competition Code Gladiators <span class="w3-text-blue"> (2017) </span></p></li>
+            <li><p>Won 2nd prize<span class="w3-text-blue"> (2010,2011,2012) </span> and 3rd <span class="w3-text-blue"> (2009) </span> in Quiz Competition conducted as part of ChinIT fest</p></li>
+            <li><p>Won Individual Champion <span class="w3-text-blue"> (2012,2011) </span> of School Athletic Meet</p></li>
+            <li><p>Finalist in Algorithmist Coding Event Conducted by GECB   <span class="w3-text-blue"> (2017) </span></p></li>
+         </ul>
+        </div>
+  </div>
+ </div>
+<br>
+<div class="achieve">
+  <div class=" w3-theme w3-card-2 w3-container w3-content" style="max-width:1380px;">
+    <h2 class="w3-text-white w3-padding-8"><i class="fa fa-trophy fa-fw w3-margin-right w3-xxlarge w3-text-blue"></i>Extracurricular Activities</h2>
+
+         <div class="w3-container">
+         <ul type="disc">
+             <li><p>Attended Workshop on Web Development conducted by IEEE at Govt. Engineering College, Barton Hill<span class="w3-text-blue ">(2017)</span></p></li> 
+             <li><p>Attended GIAN course on Scalable Network on-Chip for Many Core Systems <span class="w3-text-blue ">(2017)</span></p></li>
+             <li><p>Voluntered for NetACT International Conference conducted at MBCET<span class="w3-text-blue ">(2017)</span></p></li> 
+             <li><p>Volunteered and Co-Ordinated Code IT Competition for S4 & S2 students <span class="w3-text-blue ">(2017)</span></p></li> 
+             <li><p>Participated in Science of Deduction Conducted by GECB <span class="w3-text-blue ">(2017)</span></p></li>
+             <li><p>Participated in Black Box Coding Event Conducted by CET <span class="w3-text-blue ">(2017)</span></p></li>
+             <li><p>Participated in Exterminator Coding Event Conducted by CET <span class="w3-text-blue ">(2017)</span></p></li>
+             <li><p>Attended Python Workshop conducted by IEEE at Marian College <span class="w3-text-blue ">(2017)</span></p></li>
+             <li><p>Participated in CET’s cultural fest DHRISTI’s Game Of Codes Coding Competition <span class="w3-text-blue ">(2017)</span></p></li>
+             <li><p>Attended Workshop on Networks conducted at MBCET <span class="w3-text-blue ">(2017)</span></p></li>
+             <li><p>Attended Workshop on JavaScript conducted by Onbyz <span class="w3-text-blue ">(2016)</span></p></li>
+             <li><p>Attended Workshop on Node.js conducted by Infosys <span class="w3-text-blue ">(2016)</span></p></li>
+             <li><p>Participated in Code Chef Coding Competition Conducted at MBCET <span class="w3-text-blue ">(2016)</span></p></li>
+             <li><p>Volunteered for Data Structure Code Challenge for S4 students at MBCET  <span class="w3-text-blue ">(2016)</span></p></li>
+             <li><p>Attended Google Developers Group DevFest <span class="w3-text-blue ">(2016)</span></p></li>
+             <li><p>Attended Workshop on HTML & CSS Workshop conducted by MBCET <span class="w3-text-blue ">(2015)</span></p></li>
+             <li><p>Attended Workshop on Python Programming Workshop conducted by MBCET <span class="w3-text-blue ">(2015)</span></p></li>
+             <li><p>Attended Workshop on HTML & CSS Workshop conducted by MBCET <span class="w3-text-blue ">(2015)</span></p></li>
+
+         </ul>
+        </div>
+  </div>
+ </div>
+<footer class="w3-container w3-theme w3-center w3-margin-top">
+  <p>Find me on social media.</p>
+ <a href="https://www.instagram.com/arvind_s_panicker"><i class="fa fa-instagram  fa-2x w3-hover-opacity"></i> </a>&nbsp
+  <a href="https://www.linkedin.com/in/arvind-panicker-334b39130/"><i class="fa fa-linkedin fa-2x w3-hover-opacity"></i></a>&nbsp
+ <a href="https://www.hackerrank.com/arvindspanicker"><i class="fa fa-code fa-2x w3-hover-opacity"></i></a>&nbsp
+ <a href="https://github.com/arvindspanicker"><i class="fa fa-github fa-2x w3-hover-opacity"></i></a>&nbsp
+ <a href="https://plus.google.com/u/0/+ArvindPanicker"><i class="fa fa-google-plus fa-2x w3-hover-opacity"></i></a>
+</footer>
+
+</body>
 </html>
