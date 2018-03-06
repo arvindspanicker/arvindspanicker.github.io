@@ -35,8 +35,8 @@
 		<!--showcase -->
 		<header class="w3-display-container w3-wide w3-grayscale-min" id="showcase">
 		  <div class="w3-display-middle w3-text-white w3-center">
-		    <h1 class="w3-animate-top">Arvind Panicker</h1>
-		    <h2 class="w3-animate-bottom">Developer</h2>
+		    <h1 class="w3-animate-top" id="myname">Arvind Panicker</h1>
+		    <h2 class="w3-animate-bottom" id="mydesg">Developer</h2>
 		  </div>
 		</header>
 
@@ -54,16 +54,13 @@
 
 		<!--About Me Modal -->
 		<div id="id01" class="w3-modal w3-animate-zoom">
-		    <div class="w3-modal-content w3-card-4 w3-round-xlarge">
-		      <header class="w3-container w3-black w3-opacity-min w3-round-xlarge"> 
-		        <span onclick="document.getElementById('id01').style.display='none'" class="w3-button w3-display-topright w3-hover-opacity-off w3-round-xxlarge">&times;</span>
-		        <div class="w3-center">
-		        	<img src="images/arvind.jpg" class="w3-round-xxlarge w3-padding-16 w3-sepia-min" style="width:140px; height:150px;">
-		        </div>
+		    <div class="w3-modal-content w3-card-4 w3-round-xlarge w3-black w3-opacity">
+		      <header class="w3-container w3-black  w3-round-xlarge"> 
+		        <span onclick="document.getElementById('id01').style.display='none'; document.getElementById('myname').style.display='block'; document.getElementById('mydesg').style.display='block';" class="w3-button w3-display-topright w3-hover-opacity-off w3-round-xxlarge">&times;</span>
 		        <h2 class="w3-center">About Me</h2>
 		      </header>
-		      <div class="w3-container">
-		        <p>I’m a very passionate young coder. I lose track of time, when in the world of programming. As CSS is to HTML is what coding is to me. I love coffee, I mean who doesn’t right? You can know more about me from my resume below</p>
+		      <div class="w3-container w3-text-white w3-opacity-off">
+		        <p>I’m a very passionate young coder. I lose track of time, when in the world of programming. As CSS is to HTML is what coding is to me. I love coffee, I mean who doesn’t right? Final Year CSE Student. Budding Web Developer.Fav Programming Languages: C++, C , Python, Java. Diving into the world of computer vision and machine learning recently. You can know more about me from my resume below</p>
 		      </div>
 		      <div class="w3-center">
 		      	<a href="/resume/arvindspanickerResume.pdf" download class="w3-button w3-grey w3-hover-black w3-hover-text-white w3-round-large">Resume</a>
