@@ -17,7 +17,7 @@
 		    <i class="fa fa-home w3-xxlarge"></i>
 		    <p>HOME</p>
 		  </a>
-		  <a href="javascript:AboutMe();" class="w3-bar-item w3-button w3-padding-large w3-hover-black w3-round-large">
+		  <a href="javascript:AboutModal();" class="w3-bar-item w3-button w3-padding-large w3-hover-black w3-round-large">
 		    <i class="fa fa-user w3-xxlarge"></i>
 		    <p>ABOUT</p>
 		  </a>
@@ -25,7 +25,7 @@
 		    <i class="fa fa-eye w3-xxlarge"></i>
 		    <p>BLOG</p>
 		  </a>
-		  <a href="#contact" class="w3-bar-item w3-button w3-padding-large w3-hover-black w3-round-large">
+		  <a href="javascript:ContactModal();" class="w3-bar-item w3-button w3-padding-large w3-hover-black w3-round-large">
 		    <i class="fa fa-envelope w3-xxlarge"></i>
 		    <p>CONTACT</p>
 		  </a>
@@ -46,9 +46,9 @@
 		<div class="w3-bottom w3-opacity-min w3-hide-large w3-hide-medium w3-padding">
 		  <div class="w3-bar w3-black w3-opacity w3-hover-opacity-off w3-center w3-medium w3-round-xxlarge">
 		    <a href="#home" style="width:25%" class="w3-bar-item w3-button w3-padding">Home</a>
-		    <a  href="javascript:AboutMe();" style="width:25%" class="w3-bar-item w3-button w3-padding">About</a>
+		    <a  href="javascript:AboutModal();" style="width:25%" class="w3-bar-item w3-button w3-padding">About</a>
 		    <a href="#blog" style="width:25%" class="w3-bar-item w3-button w3-padding">Blog</a>
-		    <a href="#contact" style="width:25%" class="w3-bar-item w3-button w3-padding">Contact</a>
+		    <a href="javascript:ContactModal();" style="width:25%" class="w3-bar-item w3-button w3-padding">Contact</a>
 		  </div>
 		</div>
 
@@ -60,12 +60,38 @@
 		        <h2 class="w3-center">About Me</h2>
 		      </header>
 		      <div class="w3-container w3-text-white w3-opacity-off">
-		        <p>I’m a very passionate young coder. I lose track of time, when in the world of programming. As CSS is to HTML is what coding is to me. I love coffee, I mean who doesn’t right? Final Year CSE Student. Budding Web Developer.Fav Programming Languages: C++, C , Python, Java. Diving into the world of computer vision and machine learning recently. You can know more about me from my resume below</p>
+		        <p>I’m a very passionate young coder. I lose track of time, when in the world of programming. As CSS is to HTML is what coding is to me. I love coffee, I mean who doesn’t right? Budding Web Developer. Diving into the world of computer vision and machine learning. You can know more about me from my resume below</p>
 		      </div>
-		      <div class="w3-center">
+		      <div class=" w3-container w3-center">
 		      	<a href="/resume/arvindspanickerResume.pdf" download class="w3-button w3-grey w3-hover-black w3-hover-text-white w3-round-large">Resume</a>
+		      </div>
+		      <div class=" w3-container w3-center">
+		      	<p>Check My Github Profile</p>
+		      	<a href="https://github.com/arvindspanicker" class="w3-button w3-grey w3-hover-black w3-hover-text-white w3-round-large">Github</a>
+		      </div>
+		      <div class ="w3-container w3-center w3-padding">
+		      <p>Find me on Social Media</p>
+		      <i class="fa fa-linkedin fa-2x"></i><a href="https://www.linkedin.com/in/arvind-panicker-334b39130/" class="w3-padding"></a>  
+		      <i class="fa fa-instagram fa-2x"></i><a href="https://www.instagram.com/arvind_s_panicker/" class="w3-padding"></a>  
 		      </div>
 		    </div>
 		 </div>
+
+
+
+		 <!--Contact Modal -->
+		 <div id="id02" class="w3-modal w3-animate-zoom">
+		    <div class="w3-modal-content w3-card-4 w3-round-xlarge w3-black w3-opacity">
+		      <header class="w3-container w3-black  w3-round-xlarge"> 
+		        <span onclick="document.getElementById('id02').style.display='none'; document.getElementById('myname').style.display='block'; document.getElementById('mydesg').style.display='block';" class="w3-button w3-display-topright w3-hover-opacity-off w3-round-xxlarge">&times;</span>
+		        <h2 class="w3-center">Contact</h2>
+		      </header>
+		      <div class="w3-container w3-text-white w3-opacity-off w3-center w3-padding">
+		        <i class="fa fa-2x fa-phone-square"></i><p> +919605592887, +917012826016</p>
+		        <i class="fa fa-at fa-2x"></i><p>arvindspanicker@gmail.com</p>
+		      </div>
+		    </div>
+		 </div>
+
 	</body>
 </html>
